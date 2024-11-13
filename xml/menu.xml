@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Dulceria Nombre="Dulceria Tradicional" Descripcion="30 Años de Tradicion con los mejores precios y la mejor calidad" Slogan="La mejor dulceria tipica de San Miguel de Allende"  Celular="415 216 6151" Direccion="Animas #59 Centro CP.37700 San Miguel de Allende, Guanajuato." Horario="Lunes a Domingo de 10 AM a 5 PM" HorarioOff="Miercoles Cerrado" Email="dulceriatradicionalsma@gmail.com" >
+	<Menu>
+		<Paginas Url="/Default.aspx?Id=0" Nombre="Inicio" Id="0"></Paginas>
+		<Paginas Url="/Default.aspx?Id=1" Nombre="Categorias" Id="1"></Paginas>
+		<Paginas Url="/Default.aspx?Id=2" Nombre="Contacto" Id="2"></Paginas>
+		<Paginas Url="/Default.aspx?Id=3" Nombre="Nosotros" Id="3"></Paginas>
+	</Menu>
+	<Categorias>
+		<Alcohol>
+			<Dulce Nombre="Borrachitos" Precio="35" Id="1" Fecha="2024-12-08" Marca="La Tradicional" Stock="15">
+				<Imagen>/img/Borrachitos.jpg</Imagen>
+			</Dulce>
+			<Dulce Nombre="Rompope" Precio="55" Id="2" Fecha="2024-12-08" Marca="Las Monjas" Stock="85">
+				<Imagen>/img/Rompope.jpg</Imagen>
+			</Dulce>
+			<Dulce Nombre="Gomitas" Precio="40" Id="3" Fecha="2024-11-08" Marca="La Tradicional" Stock="50">
+				<Imagen>/img/Gomitas.jpg</Imagen>
+			</Dulce>
+			<Dulce Nombre="BotellitasdeAnis" Precio="40" Id="4" Fecha="2024-12-08" Marca="Envinados" Stock="3">
+				<Imagen>/img/BotellitasdeAnis.jpg</Imagen>
+			</Dulce>
+			<Dulce Nombre="Jamoncillo" Precio="40" Id="5" Fecha="2024-12-09" Marca="Jamoncillo" Stock="30">
+				<Imagen>/img/Jamoncillo.jpg</Imagen>
+			</Dulce>
+		</Alcohol>
+		<Picante>
+			<Dulce Nombre="Tamarindo" Precio="10" Id="6" Fecha="2025-12-08" Marca="Estrella" Stock="115">
+				<Imagen>/img/Tamarindo.jpg</Imagen>
+			</Dulce>
+			<Dulce Nombre="Paletas" Precio="5" Id="7" Fecha="2025-01-12" Marca="Estrella" Stock="115">
+				<Imagen>/img/Paletas.jpg</Imagen>
+			</Dulce>
+			<Dulce Nombre="Manzanas" Precio="20" Id="8" Fecha="2024-11-12" Marca="" Stock="5">
+				<Imagen>/img/Manzanas.jpg</Imagen>
+			</Dulce>
+		</Picante>
+		<Dulces>
+			<Dulce Nombre="Palanquetas" Precio="30" Id="9" Fecha="2025-01-12" Marca="Las Monjas" Stock="15">
+				<Imagen>/img/Palanquetas.jpg</Imagen>
+			</Dulce>
+			<Dulce Nombre="Obleas" Precio="20" Id="10" Fecha="2024-11-12" Marca="La Tradicional" Stock="110">
+				<Imagen>/img/Obleas.jpg</Imagen>
+			</Dulce>
+			<Dulce Nombre="FrutaCristalizada" Precio="190" Id="11" Fecha="2024-12-12" Marca="Poblana" Stock="15">
+				<Imagen>/img/FrutaCristalizada.jpg</Imagen>
+			</Dulce>
+			<Dulce Nombre="Camotitos" Precio="5" Id="12" Fecha="2025-01-12" Marca="Poblana" Stock="15">
+				<Imagen>/img/Camotitos.jpg</Imagen>
+			</Dulce>
+		</Dulces>
+	</Categorias>
+	<Imagenes>
+		<Imagen Nombre="Principal" Id="1" Url="../assets/img/Parroquia.png">../assets/img/Parroquia.png</Imagen>
+		<Imagen Nombre="Portada" Id="2" Url="../assets/img/Portada.jpg">../assets/img/Portada.jpg</Imagen>
+		<Imagen Nombre="Logo" Id="3" Url="/img/Logo.jpg">/img/Logo.jpg</Imagen>
+	</Imagenes>
+	<Informacion_Extra>
+		<Ciudad Descripcion="San Miguel de Allende es una ciudad del estado mexicano de Guanajuato. Es parte de la macrorregión del Bajío. ​ ​ Es cabecera del municipio homónimo y uno de los principales destinos turísticos de México." Reconocimiento="La UNESCO la reconoció como Patrimonio Cultural de la Humanidad en 2008"></Ciudad>
+		<Historia Descubre="¿Sabías que nuestros dulces mexicanos típicos surgieron gracias a la mezcla de ingredientes de nuestras tierras y los que llegaron de otros países?"></Historia>
+		<Curiosidades Dato1="El dulce tipico aporta una baja cantidad de hidratos de carbono y aun menor de proteinas; Es rico en sales, minerales, magnesio, fosforo, calcio y potasio" Dato2=" La cocina mexicana está valorada a nivel internacional e incluso es considerada como patrimonio de la humanidad por parte de la UNESCO."></Curiosidades>
+	</Informacion_Extra>
+</Dulceria>
