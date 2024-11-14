@@ -7,53 +7,52 @@
 		<Paginas Url="/Default.aspx?Id=3" Nombre="Nosotros" Id="3"></Paginas>
 	</Menu>
 	<Categorias>
-		<Alcohol>
+		<Alcohol Id ="1" Nombre="Dulces con Alcohol">
 			<Dulce Nombre="Borrachitos" Precio="35" Id="1" Fecha="2024-12-08" Marca="La Tradicional" Stock="15">
-				<Imagen>/img/Borrachitos.jpg</Imagen>
+				<Imagen Id="1" Url="../assets/img/Borrachitos.jpg"></Imagen>
 			</Dulce>
 			<Dulce Nombre="Rompope" Precio="55" Id="2" Fecha="2024-12-08" Marca="Las Monjas" Stock="85">
-				<Imagen>/img/Rompope.jpg</Imagen>
+				<Imagen Id="2" Url="../assets/img/Rompope.jpg"></Imagen>
 			</Dulce>
 			<Dulce Nombre="Gomitas" Precio="40" Id="3" Fecha="2024-11-08" Marca="La Tradicional" Stock="50">
-				<Imagen>/img/Gomitas.jpg</Imagen>
+				<Imagen Id="3" Url="../assets/img/Gomitas.jpg"></Imagen>
 			</Dulce>
 			<Dulce Nombre="BotellitasdeAnis" Precio="40" Id="4" Fecha="2024-12-08" Marca="Envinados" Stock="3">
-				<Imagen>/img/BotellitasdeAnis.jpg</Imagen>
+				<Imagen Id="4" Url="../assets/img/BotellitasdeAnis.jpg"></Imagen>
 			</Dulce>
 			<Dulce Nombre="Jamoncillo" Precio="40" Id="5" Fecha="2024-12-09" Marca="Jamoncillo" Stock="30">
-				<Imagen>/img/Jamoncillo.jpg</Imagen>
+				<Imagen Id="5" Url="../assets/img/Jamoncillo.jpg"></Imagen>
 			</Dulce>
 		</Alcohol>
-		<Picante>
+		<Picante Id="2" Nombre="Dulces Picantes">
 			<Dulce Nombre="Tamarindo" Precio="10" Id="6" Fecha="2025-12-08" Marca="Estrella" Stock="115">
-				<Imagen>/img/Tamarindo.jpg</Imagen>
+				<Imagen Id="1" Url="../assets/img/Tamarindo.jpg"></Imagen>
 			</Dulce>
 			<Dulce Nombre="Paletas" Precio="5" Id="7" Fecha="2025-01-12" Marca="Estrella" Stock="115">
-				<Imagen>/img/Paletas.jpg</Imagen>
+				<Imagen Id="2" Url="../assets/img/Paletas.jpeg"></Imagen>
 			</Dulce>
 			<Dulce Nombre="Manzanas" Precio="20" Id="8" Fecha="2024-11-12" Marca="" Stock="5">
-				<Imagen>/img/Manzanas.jpg</Imagen>
+				<Imagen Id="3" Url="../assets/img/Manzanas.jpg"></Imagen>
 			</Dulce>
 		</Picante>
-		<Dulces>
+		<Dulces Id="3" Nombre="Dulces con Azucarados">
 			<Dulce Nombre="Palanquetas" Precio="30" Id="9" Fecha="2025-01-12" Marca="Las Monjas" Stock="15">
-				<Imagen>/img/Palanquetas.jpg</Imagen>
+				<Imagen Id="1" Url="../assets/img/Palanquetas.jpg"></Imagen>
 			</Dulce>
 			<Dulce Nombre="Obleas" Precio="20" Id="10" Fecha="2024-11-12" Marca="La Tradicional" Stock="110">
-				<Imagen>/img/Obleas.jpg</Imagen>
+				<Imagen Id="2" Url="../assets/img/Obleas.jpg"></Imagen>
 			</Dulce>
 			<Dulce Nombre="FrutaCristalizada" Precio="190" Id="11" Fecha="2024-12-12" Marca="Poblana" Stock="15">
-				<Imagen>/img/FrutaCristalizada.jpg</Imagen>
+				<Imagen Id="3" Url="../assets/img/FrutaCristalizada.jpg"></Imagen>
 			</Dulce>
 			<Dulce Nombre="Camotitos" Precio="5" Id="12" Fecha="2025-01-12" Marca="Poblana" Stock="15">
-				<Imagen>/img/Camotitos.jpg</Imagen>
+				<Imagen Id="4" Url="../assets/img/Camotitos.jpg"></Imagen>
 			</Dulce>
 		</Dulces>
 	</Categorias>
 	<Imagenes>
 		<Imagen Nombre="Principal" Id="1" Url="../assets/img/Parroquia.png">../assets/img/Parroquia.png</Imagen>
 		<Imagen Nombre="Portada" Id="2" Url="../assets/img/Portada.jpg">../assets/img/Portada.jpg</Imagen>
-		<Imagen Nombre="Logo" Id="3" Url="/img/Logo.jpg">/img/Logo.jpg</Imagen>
 	</Imagenes>
 	<Informacion_Extra>
 		<Ciudad Descripcion="San Miguel de Allende es una ciudad del estado mexicano de Guanajuato. Es parte de la macrorregión del Bajío. ​ ​ Es cabecera del municipio homónimo y uno de los principales destinos turísticos de México." Reconocimiento="La UNESCO la reconoció como Patrimonio Cultural de la Humanidad en 2008"></Ciudad>
