@@ -304,89 +304,99 @@
 					<h2 class="text-primary font-secondary">Catalogo</h2>
 					<h1 class="display-4 text-uppercase">Dulces Tradicionales</h1>
 				</div>
-				<div class="tab-class text-center">
+
+
+				<div class="tab-class text-center" >
 					<ul class="nav nav-pills d-inline-flex justify-content-center bg-dark text-uppercase border-inner p-4 mb-5">
 						<li class="nav-item">
-							<a class="nav-link text-white" data-bs-toggle="pill" href="#tab-1">Alcohol</a>
+							<a class="nav-link text-white " data-bs-toggle="pill" onclick="openCate(event, 'Alcohol')" >Alcohol</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-white" data-bs-toggle="pill" href="#tab-2">Picante</a>
+							<a class="nav-link text-white" data-bs-toggle="pill" onclick="openCate(event, 'Picante')">Picante</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-white" data-bs-toggle="pill" href="#tab-3">Dulces</a>
+							<a class="nav-link text-white" data-bs-toggle="pill" onclick="openCate(event, 'Dulces')">Dulces</a>
 						</li>
 					</ul>
-					<div class="tab-content">
-						<div id="tab-1" class="tab-pane fade show p-0 active">
+					<div class="tab-content" >
+						<div id="Alcohol" class="tab-pane fade show p-0 active">
+							<div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+								<h2 class="text-primary font-secondary">Dulces con Alcohol</h2>
+							</div>
+
 							<div class="row g-3">
+								<xsl:for-each select="Categorias/Alcohol/Dulce">
 								<div class="col-lg-6">
 									<div class="d-flex h-100">
 										<div class="flex-shrink-0">
-											<img class="img-fluid" src="img/cake-1.jpg" alt="" style="width: 150px; height: 85px;"></img>
-											<h4 class="bg-dark text-primary p-2 m-0">$1.00</h4>
+											<img class="img-fluid" src="{Imagen/@Url}" alt="" style="width: 150px; height: 85px;"></img>
+											<h4 class="bg-dark text-primary p-2 m-0"><xsl:value-of select="Precio"/></h4>
 										</div>
 										<div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-											<h5 class="text-uppercase">Birthday Cake</h5>
-											<span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+											<h5 class="text-uppercase"><xsl:value-of select="@Nombre"/></h5>
+											<span>
+												<xsl:value-of select="@Marca"/>
+											</span>
 										</div>
 									</div>
 								</div>
+								</xsl:for-each>
 							</div>
 						</div>
-						<div id="tab-2" class="tab-pane fade show p-0">
+						<div class="tab-pane fade show p-0" id = "Picante">
+							<div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+								<h2 class="text-primary font-secondary">Dulces con Picante</h2>
+							</div>
+
 							<div class="row g-3">
-								<div class="col-lg-6">
-									<div class="d-flex h-100">
-										<div class="flex-shrink-0">
-											<img class="img-fluid" src="img/cake-2.jpg" alt="" style="width: 150px; height: 85px;"></img>
-											<h4 class="bg-dark text-primary p-2 m-0">$92.00</h4>
-										</div>
-										<div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-											<h5 class="text-uppercase">Wedding Cake</h5>
-											<span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="d-flex h-100">
-										<div class="flex-shrink-0">
-											<img class="img-fluid" src="img/cake-2.jpg" alt="" style="width: 150px; height: 85px;"></img>
-											<h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
-										</div>
-										<div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-											<h5 class="text-uppercase">Wedding Cake</h5>
-											<span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+								<xsl:for-each select="Categorias/Picante/Dulce">
+									<div class="col-lg-6">
+										<div class="d-flex h-100">
+											<div class="flex-shrink-0">
+												<img class="img-fluid" src="{Imagen/@Url}" alt="" style="width: 150px; height: 85px;"></img>
+												<h4 class="bg-dark text-primary p-2 m-0">
+													<xsl:value-of select="Precio"/>
+												</h4>
+											</div>
+											<div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+												<h5 class="text-uppercase">
+													<xsl:value-of select="@Nombre"/>
+												</h5>
+												<span>
+													<xsl:value-of select="@Marca"/>
+												</span>
+											</div>
 										</div>
 									</div>
-								</div>
+								</xsl:for-each>
 							</div>
 						</div>
-						<div id="tab-3" class="tab-pane fade show p-0">
+						<div id="Dulces" class="tab-pane fade show p-0">
+							<div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+								<h2 class="text-primary font-secondary">Dulces con Azucarados</h2>
+							</div>
+
 							<div class="row g-3">
-								<div class="col-lg-6">
-									<div class="d-flex h-100">
-										<div class="flex-shrink-0">
-											<img class="img-fluid" src="img/cake-3.jpg" alt="" style="width: 150px; height: 85px;"></img>
-											<h4 class="bg-dark text-primary p-2 m-0">$93.00</h4>
-										</div>
-										<div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-											<h5 class="text-uppercase">Custom Cake</h5>
-											<span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="d-flex h-100">
-										<div class="flex-shrink-0">
-											<img class="img-fluid" src="img/cake-3.jpg" alt="" style="width: 150px; height: 85px;"></img>
-											<h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
-										</div>
-										<div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-											<h5 class="text-uppercase">Custom Cake</h5>
-											<span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+								<xsl:for-each select="Categorias/Dulces/Dulce">
+									<div class="col-lg-6">
+										<div class="d-flex h-100">
+											<div class="flex-shrink-0">
+												<img class="img-fluid" src="{Imagen/@Url}" alt="" style="width: 150px; height: 85px;"></img>
+												<h4 class="bg-dark text-primary p-2 m-0">
+													<xsl:value-of select="Precio"/>
+												</h4>
+											</div>
+											<div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+												<h5 class="text-uppercase">
+													<xsl:value-of select="@Nombre"/>
+												</h5>
+												<span>
+													<xsl:value-of select="@Marca"/>
+												</span>
+											</div>
 										</div>
 									</div>
-								</div>
+								</xsl:for-each>
 							</div>
 						</div>
 					</div>
@@ -395,7 +405,61 @@
 		</div>
 		<!-- Products End -->
 
+		<script>
+			function openCate(evt, CatalogoNombre) {
+				var i, tabcontent, tablinks;
+				tabcontent = document.getElementsByClassName("tab-pane");
+				for (i = 0; i <![CDATA[<]]> tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+				}
+				tablinks = document.getElementsByClassName("nav-links");
+				for (i = 0; i <![CDATA[<]]> tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+			
+			}
+			document.getElementById(CatalogoNombre).style.display = "block";
+			evt.currentTarget.className += " ";
+			}
+		</script>
 
+		<style>
+			/* Style the tab */
+			.tab {
+			overflow: hidden;
+			border: 1px solid #ccc;
+			background-color: #f1f1f1;
+			}
+
+			/* Style the buttons inside the tab */
+			.tab button {
+			background-color: inherit;
+			float: left;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			padding: 14px 16px;
+			transition: 0.3s;
+			font-size: 17px;
+			}
+
+			/* Change background color of buttons on hover */
+			.tab button:hover {
+			background-color: #ddd;
+			}
+
+			/* Create an active/current tablink class */
+			.tab button.active {
+			background-color: #ccc;
+			}
+
+			/* Style the tab content */
+			.tabcontent {
+			display: none;
+			padding: 6px 12px;
+			border: 1px solid #ccc;
+			border-top: none;
+			}
+		</style>
 	</xsl:template>
 	<xsl:template name="Contacto">
 		<!--API de Google-->
@@ -530,6 +594,7 @@
 					padding: 10px;
 					border: 1px solid #aaaaaa;
 					}
+
 
 				</style>
 
