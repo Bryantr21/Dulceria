@@ -588,7 +588,7 @@
 				<br></br>
 
 				<style>
-					#div1 {
+					#div1, #div2 {
 					width: 100%;
 					height: 400px;
 					padding: 10px;
@@ -613,10 +613,12 @@
 					<br></br>
 					<h2 class="col-lg-12 mb-30"><![CDATA[Canasta de Dulces]]></h2>
 					<br></br>
-					<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div id="div1" style="display:block;" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					
+					<div  id="div2" style="display:none;" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
 					<br></br>
-
+					<button class="btn btn-primary btn-xs" id="limpia" onclick="limpiar(event)">Limpiar Canasta</button>
 				</section>
 				<br></br>
 			</section>
@@ -637,6 +639,13 @@
 			var data = ev.dataTransfer.getData("text");
 			ev.target.appendChild(document.getElementById(data));
 			}
+			function limpiar(e){
+			divw = document.getElementById('div1');
+			divw.style.display = 'none';
+			divx = document.getElementById('div2');
+			divx.style.display = '';
+			}
+
 		</script>
 	</xsl:template>
 </xsl:stylesheet>
